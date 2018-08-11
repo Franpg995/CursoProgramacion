@@ -1,5 +1,10 @@
 package com.petergregory;
 
+
+import com.petergregory.soluciones.IOrdenacion;
+
+import java.util.Arrays;
+
 public class Main {
 
     /**
@@ -16,10 +21,28 @@ public class Main {
      */
 
     public static void main(String[] args) {
-	// write your code here
-        testSumaStrings();
-        testSumaInt();
-        testChar();
+        System.out.println("");
+        int[] arrayAOrdenar = new int[10];
+        System.out.println("Set de datos inicial: " + Arrays.toString(arrayAOrdenar));
+        System.out.println("");
+        ordenarExequiel(arrayAOrdenar);
+        System.out.println("");
+        System.out.println("");
+        ordenarGregory(arrayAOrdenar);
+    }
+
+    private static void ordenarExequiel(int[] array){
+        IOrdenacion ordenacion = new com.petergregory.soluciones.exequiel.Ordenacion();
+        int[] resultado = ordenacion.ordenarMenorAMayor(array);
+        System.out.println("Resultado ordenamiento Exequiel *******");
+        System.out.println(Arrays.toString(resultado));
+    }
+
+    private static void ordenarGregory(int[] array){
+        IOrdenacion ordenacion = new com.petergregory.soluciones.gregory.Ordenacion();
+        int[] resultado = ordenacion.ordenarMenorAMayor(array);
+        System.out.println("Resultado ordenamiento Gregory *******");
+        System.out.println(Arrays.toString(resultado));
     }
 
     private static void testSumaStrings(){
