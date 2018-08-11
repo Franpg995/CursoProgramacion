@@ -23,6 +23,18 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("");
         int[] arrayAOrdenar = new int[10];
+        arrayAOrdenar[0]=9;
+        arrayAOrdenar[1]=2;
+        arrayAOrdenar[2]=3;
+        arrayAOrdenar[3]=3;
+        arrayAOrdenar[4]=4;
+        arrayAOrdenar[5]=7;
+        arrayAOrdenar[6]=99;
+        arrayAOrdenar[7]=-9;
+        arrayAOrdenar[8]=0;
+        arrayAOrdenar[9]=5;
+
+
         System.out.println("Set de datos inicial: " + Arrays.toString(arrayAOrdenar));
         System.out.println("");
         ordenarExequiel(arrayAOrdenar);
