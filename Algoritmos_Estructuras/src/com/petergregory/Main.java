@@ -26,7 +26,7 @@ public class Main {
         arrayAOrdenar[0]=9;
         arrayAOrdenar[1]=2;
         arrayAOrdenar[2]=3;
-        arrayAOrdenar[3]=3;
+        arrayAOrdenar[3]=-33;
         arrayAOrdenar[4]=4;
         arrayAOrdenar[5]=7;
         arrayAOrdenar[6]=99;
